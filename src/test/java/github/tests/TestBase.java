@@ -1,4 +1,4 @@
-package github;
+package github.tests;
 
 import com.codeborne.selenide.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;

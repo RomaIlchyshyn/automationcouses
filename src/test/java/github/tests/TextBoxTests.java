@@ -1,4 +1,4 @@
-package github;
+package github.tests;
 
 import com.codeborne.selenide.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TextBoxTests {
+public class TextBoxTests extends TestData{
 
     @BeforeAll
     static void setupDriver(){
@@ -20,17 +20,22 @@ public class TextBoxTests {
 
     @Test
     void fillFormTest() {
+
+        String userName = "Roma";
+        String email = "roma@gmail.com";
+        String userAddress = "Kyiv";
+
         open("/text-box");
-        $(("#userName")).setValue("Roma");
-        $("#userEmail").setValue("roma@gmail.com");
-        $("#currentAddress").setValue("Kyiv");
+        $(("#userName")).setValue(userName);
+        $("#userEmail").setValue(email);
+        $("#currentAddress").setValue(userAddress);
         $("#permanentAddress").setValue("Kyiv");
         $("#submit").click();
 
         $("#output").shouldBe(visible);
 
-        $("#name").shouldHave(text("Roma"));
-        $("#email").shouldHave(text("roma@gmail.com"));
+        $("#name").shouldHave(text(userName));
+        $("#email").shouldHave(text(email));
 
     }
 }

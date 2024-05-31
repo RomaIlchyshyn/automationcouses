@@ -10,7 +10,8 @@ dependencies {
     testImplementation (
             'org.junit.jupiter:junit-jupiter:5.8.2',
             'com.codeborne:selenide:7.0.2',
-            "io.github.bonigarcia:webdrivermanager:5.6.1")
+            'io.github.bonigarcia:webdrivermanager:5.6.1',
+            'com.github.javafaker:javafaker:1.0.2')
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
