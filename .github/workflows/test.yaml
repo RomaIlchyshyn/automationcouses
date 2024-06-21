@@ -19,7 +19,7 @@ jobs:
       - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
 
       - name: Get Allure history
-      - uses: action/checkout@v2
+        uses: action/checkout@v2
         if: always()
         continue-on-error: true
         with:
