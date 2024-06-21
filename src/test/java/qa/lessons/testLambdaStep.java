@@ -14,7 +14,7 @@ import static org.openqa.selenium.By.linkText;
 public class testLambdaStep {
 
     private static final String REPOSITORY = "eroshenkoam/allure-example";
-    private static final Integer ISSUE = 85;
+    private static final Integer ISSUE = 89;
 
     @Test
     public void selenideIssueSearch() {
