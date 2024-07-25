@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jul 25 20:45:23 GMT 2024","Thu Jul 25 20:45:23 GMT 2024","26","","qa.lessons.LabelsTest","","qa.lessons.LabelsTest","testStaticLable","Creating issue for authorized used",""
+"passed","Thu Jul 25 20:45:29 GMT 2024","Thu Jul 25 20:45:31 GMT 2024","2042","","qa.lessons.testLambdaStep","","qa.lessons.testLambdaStep","testAnnotatedStep","testAnnotatedStep()",""
+"passed","Thu Jul 25 20:45:24 GMT 2024","Thu Jul 25 20:45:24 GMT 2024","1","","qa.lessons.LabelsTest","","qa.lessons.LabelsTest","deleteTest","Deleting issue from repo",""
+"passed","Thu Jul 25 20:45:24 GMT 2024","Thu Jul 25 20:45:29 GMT 2024","5394","","qa.lessons.testLambdaStep","","qa.lessons.testLambdaStep","selenideIssueSearch","selenideIssueSearch()",""
