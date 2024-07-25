@@ -12,6 +12,7 @@ jobs:
           java-version: '18'
           distribution: 'temurin'
       - uses: Xotabu4/selenoid-github-action@v2
+      - run : chmod +x ./gradlew
       - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
       - uses: actions/checkout@v2
         if: always()
@@ -29,6 +30,6 @@ jobs:
       - uses: peaceiris/actions-gh-pages@v2
         if: always()
         env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_TOKEN: ${{ GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
